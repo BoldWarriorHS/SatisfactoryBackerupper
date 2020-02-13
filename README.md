@@ -1,16 +1,14 @@
 # SatisfactoryBackerupper
-One-click Windows CMD/Powershell script for backing up Satisfactory save files! It creates a folder called Satisfactory Saves in OneDrive (although this location can be changed - see below for details) and copies all of your precious save files to it!
-
-There aer two versions of the script. The .bat file is the Command Prompt version and will simply move the folders to the backup location, while the .ps1 script is the Powershell version and will compress your saves into .zip files.
+One-click Windows Powershell script for backing up Satisfactory save files! It creates a folder called Satisfactory Saves in OneDrive (although this location can be changed - see below for details) and copies all of your precious save files to it. Saves are compressed into zip folders marked with the date and time the backup was created.
 
 ## Instructions
 
-If you use the default save location and are OK with the default backup location, simply download and save the batch file to whereever you want to access it from, exicute it, and your files will immediately upload to OneDrive!
+If you use the default save location and are OK with the default backup location, simply download and save the .ps1 file to whereever you want to access it from, exicute it, and your files will immediately upload to OneDrive!
 
 ### If you have changed where the default save files are stored:
 
-Download and save the bat file, right-click on it, and select edit. Change the variable currentsave (first line) to the location where your savefiles are stored. Make sure to not delete the quotation marks.
+Open the `.ps1` file with your text editor of choice. Change the variable `currentsave` (first line) to the location where your savefiles are stored. Make sure to not delete the quotation marks and delete `$HOME + ` from the line.
 
 ### If you want to change the backup location:
 
-Download and save the bat file, right-click on it, and select edit. Change the variable backuplocation to the folder where you want the backups to go. Make sure to not delete the quotation marks. Note that this script will attempt to create the folder if it cannot find the folder specified.
+Open the `.ps1` file with your text editor of choice. Change the variable `backuplocation` (second line) to the folder where you want the backups to go. Make sure to not delete the quotation marks and delete `$HOME + ` from the line. Note that this script will attempt to create the folder if it cannot find the folder specified.
